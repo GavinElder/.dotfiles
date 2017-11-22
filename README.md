@@ -1,4 +1,5 @@
-# .dotfiles
+# Dotfiles
 
-This is the random Dotfiles. 
+# This is the random Dotfiles.
+
 
