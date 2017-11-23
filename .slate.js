@@ -147,38 +147,21 @@ var pushedBottomLeft = function(win) {
 var grid = slate.operation("grid", {
   "grids" : {
     "1680x1050" : {
-      "width" : 16,
-      "height" : 9
+      "width" : 3,
+      "height" : 2
     },
     "3440x1440" : {
       "width" : 6,
       "height" : 3
     },
-    "1800x1920" : {
-      "width" : 1,
+    "1080x1920" : {
+      "width" : 2,
       "height" : 3
     }
   },
   "padding" : 5
 });
-
-var grid1 = slate.operation("grid", {
-  "grids" : {
-    "1680x1050" : {
-      "width" : 6,
-      "height" : 6
-    },
-    "3440x1440" : {
-      "width" : 6,
-      "height" : 3
-    },
-    "1800x1920" : {
-      "width" : 1,
-      "height" : 3
-    }
-  },
-  "padding" : 5
-});
+slate.bind("g:cmd", grid);
 
 var pushedRight = function(win) {
   if (!win) {
