@@ -28,6 +28,7 @@ var lapChat = S.op("corner", {
   "height" : "screenSizeY"
 });
 var lapMain = lapChat.dup({ "direction" : "top-right", "width" : "8*screenSizeX/9" });
+
 var tboltFull = S.op("move", {
   "screen" : monTbolt,
   "x" : "screenOriginX",
@@ -52,7 +53,7 @@ var tboltBig = S.op("move", {
 
 // Batch bind everything. Less typing.
 S.bnda({
-  /(// Layout Bindings
+  // Layout Bindings
   /*"padEnter:ctrl" : universalLayout,
   "space:ctrl" : universalLayout,
 
@@ -72,20 +73,21 @@ S.bnda({
   "pad9:ctrl" : tboltRight,
   "pad=:ctrl" : tboltFull,
 */
+
   // Resize Bindings
   // NOTE: some of these may *not* work if you have not removed the expose/spaces/mission control bindings
-  "right:ctrl" : S.op("resize", { "width" : "+10%", "height" : "+0" }),
-  "left:ctrl" : S.op("resize", { "width" : "-10%", "height" : "+0" }),
-  "up:ctrl" : S.op("resize", { "width" : "+0", "height" : "-10%" }),
-  "down:ctrl" : S.op("resize", { "width" : "+0", "height" : "+10%" }),
-  "right:alt" : S.op("resize", { "width" : "-10%", "height" : "+0", "anchor" : "bottom-right" }),
-  "left:alt" : S.op("resize", { "width" : "+10%", "height" : "+0", "anchor" : "bottom-right" }),
-  "up:alt" : S.op("resize", { "width" : "+0", "height" : "+10%", "anchor" : "bottom-right" }),
-  "down:alt" : S.op("resize", { "width" : "+0", "height" : "-10%", "anchor" : "bottom-right" }),
+  //"right:ctrl" : S.op("resize", { "width" : "+10%", "height" : "+0" }),
+  //"left:ctrl" : S.op("resize", { "width" : "-10%", "height" : "+0" }),
+  //"up:ctrl" : S.op("resize", { "width" : "+0", "height" : "-10%" }),
+  //"down:ctrl" : S.op("resize", { "width" : "+0", "height" : "+10%" }),
+  //"right:alt" : S.op("resize", { "width" : "-10%", "height" : "+0", "anchor" : "bottom-right" }),
+  //"left:alt" : S.op("resize", { "width" : "+10%", "height" : "+0", "anchor" : "bottom-right" }),
+  //"up:alt" : S.op("resize", { "width" : "+0", "height" : "+10%", "anchor" : "bottom-right" }),
+  //"down:alt" : S.op("resize", { "width" : "+0", "height" : "-10%", "anchor" : "bottom-right" }),
 
   // Push Bindings
   // NOTE: some of these may *not* work if you have not removed the expose/spaces/mission control bindings
-  "right:ctrl;" : S.op("push", { "direction" : "right", "style" : "bar-resize:screenSizeX/2" }),
+  "right:ctrl;shift" : S.op("push", { "direction" : "right", "style" : "bar-resize:screenSizeX/2" }),
   "left:ctrl;shift" : S.op("push", { "direction" : "left", "style" : "bar-resize:screenSizeX/2" }),
   "up:ctrl;shift" : S.op("push", { "direction" : "up", "style" : "bar-resize:screenSizeY/2" }),
   "down:ctrl;shift" : S.op("push", { "direction" : "down", "style" : "bar-resize:screenSizeY/2" }),
@@ -99,14 +101,15 @@ S.bnda({
 
   // Throw Bindings
   // NOTE: some of these may *not* work if you have not removed the expose/spaces/mission control bindings
-  "pad1:ctrl;alt" : S.op("throw", { "screen" : "2", "width" : "screenSizeX", "height" : "screenSizeY" }),
-  "pad2:ctrl;alt" : S.op("throw", { "screen" : "1", "width" : "screenSizeX", "height" : "screenSizeY" }),
-  "pad3:ctrl;alt" : S.op("throw", { "screen" : "0", "width" : "screenSizeX", "height" : "screenSizeY" }),
-  "right:ctrl;alt;cmd" : S.op("throw", { "screen" : "right", "width" : "screenSizeX", "height" : "screenSizeY" }),
-  "left:ctrl;alt;cmd" : S.op("throw", { "screen" : "left", "width" : "screenSizeX", "height" : "screenSizeY" }),
-  "up:ctrl;alt;cmd" : S.op("throw", { "screen" : "up", "width" : "screenSizeX", "height" : "screenSizeY" }),
-  "down:ctrl;alt;cmd" : S.op("throw", { "screen" : "down", "width" : "screenSizeX", "height" : "screenSizeY" }),
+  //"pad1:ctrl;alt" : S.op("throw", { "screen" : "2", "width" : "screenSizeX", "height" : "screenSizeY" }),
+ // "pad2:ctrl;alt" : S.op("throw", { "screen" : "1", "width" : "screenSizeX", "height" : "screenSizeY" }),
+ // "pad3:ctrl;alt" : S.op("throw", { "screen" : "0", "width" : "screenSizeX", "height" : "screenSizeY" }),
+ // "right:ctrl;alt;cmd" : S.op("throw", { "screen" : "right", "width" : "screenSizeX", "height" : "screenSizeY" }),
+ // "left:ctrl;alt;cmd" : S.op("throw", { "screen" : "left", "width" : "screenSizeX", "height" : "screenSizeY" }),
+ // "up:ctrl;alt;cmd" : S.op("throw", { "screen" : "up", "width" : "screenSizeX", "height" : "screenSizeY" }),
+ // "down:ctrl;alt;cmd" : S.op("throw", { "screen" : "down", "width" : "screenSizeX", "height" : "screenSizeY" }),
 
+  
   // Focus Bindings
   // NOTE: some of these may *not* work if you have not removed the expose/spaces/mission control bindings
   //"l:cmd" : S.op("focus", { "direction" : "right" }),
@@ -128,8 +131,6 @@ S.bnda({
   // Switch currently doesn't work well so I'm commenting it out until I fix it.
   //"tab:cmd" : S.op("switch"),
 
-  // Grid
-  //"cmd:g" : S.op("grid", { "grids" : {"1680x1050" : {"width" : 3, "height" : 2 },"3440x1440" : {"width" : 6,"height" : 3},"1080x1920" : {"width" : 2,"height" : 3 } },"padding" : 5 }),
 })
 
 var grid = slate.operation("grid", {
@@ -149,11 +150,11 @@ var grid = slate.operation("grid", {
   },
   "padding" : 5
 });
-slate.bind("esc:ctrl", grid);
+slate.bind("g:cmd;shift", grid);
 
 // Test Cases
-S.src(".slate.test", true);
-S.src(".slate.test.js", true);
+//S.src(".slate.test", true);
+//S.src(".slate.test.js", true);
 
 // Log that we're done configuring
 S.log("[SLATE] -------------- Finished Loading Config --------------");
