@@ -144,24 +144,6 @@ var pushedBottomLeft = function(win) {
   return false;
 };
 
-var grid = slate.operation("grid", {
-  "grids" : {
-    "1680x1050" : {
-      "width" : 16
-      "height" : 9
-    },
-    "3440x1440" : {
-      "width" : 6
-      "height" : 3
-    },
-    "1800x1920" : {
-      "width" : 1
-      "height" : 3
-    }
-  },
-  "padding" : 5
-});
-
 var pushedRight = function(win) {
   if (!win) {
     return false;
@@ -237,7 +219,7 @@ slate.bind("right:ctrl,cmd", function(win) {
 });
 
 slate.bind("up:ctrl,cmd", function(win) {
-  if (!win) {©
+  if (!win) {
     return;
   }
 
@@ -265,9 +247,3 @@ slate.bind("down:ctrl,cmd", function(win) {
     throwNext(win);
   }
 });
-
-slate.bind("cmd:1", grid);
-
-
-
-
