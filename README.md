@@ -1,6 +1,8 @@
-# Random Dotfiles
+# Dotfiles
 
 This is a bunch of random dotfiles for moving accross machines.
+
+This is not a complete selection yet!
 
 ## install.sh for creating symlinks for Config files 
 
