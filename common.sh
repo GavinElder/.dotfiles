@@ -19,7 +19,7 @@ help(){
     #Better way: look it up in the man pages. I often look up "test" which doesn't give a usefull result,
     #so I added that as a special case.
     if [[ $1 == "test" ]]; then
-        man --pager="less -p'^CONDITIONAL EXPRESSIONS$'" zshall
+        man --pager="less -p'^CONDITIONAL EXPRESSIONS$''" zshall
     else
         man --pager="less -p'^ *$@ '" zshall
     fi
