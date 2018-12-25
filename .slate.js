@@ -1,4 +1,4 @@
-// Configs
+// ConfiG
 S.cfga({
   "defaultToCurrentScreen" : true,
   "secondsBetweenRepeat" : 0.1,
@@ -109,7 +109,7 @@ S.bnda({
  // "up:ctrl;alt;cmd" : S.op("throw", { "screen" : "up", "width" : "screenSizeX", "height" : "screenSizeY" }),
  // "down:ctrl;alt;cmd" : S.op("throw", { "screen" : "down", "width" : "screenSizeX", "height" : "screenSizeY" }),
 
-  
+
   // Focus Bindings
   // NOTE: some of these may *not* work if you have not removed the expose/spaces/mission control bindings
   //"l:cmd" : S.op("focus", { "direction" : "right" }),
@@ -150,7 +150,7 @@ var grid = slate.operation("grid", {
   },
   "padding" : 5
 });
-slate.bind("g:cmd;shift", grid);
+slate.bind("g:cmd;ctrl", grid);
 
 // Test Cases
 //S.src(".slate.test", true);
