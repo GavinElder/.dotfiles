@@ -2,15 +2,17 @@
 
 This repo is a basic setup for MacOS dev environment.
 
-## GNU STOW for creating symlinks for Config files
+## Tools
+
+### GNU STOW for creating symlinks for Config files
 
 [GNU STOW](https://www.gnu.org/software/stow/) is a symlink farm manager.
 
-## Slate
+### Slate
 
 [Slate](https://github.com/jigish/slate) is a window manager for MacOS which is highly customisable.
 
-## Setup
+### Setup
 
 run ./scripts/setup-osx.sh & profit
 
