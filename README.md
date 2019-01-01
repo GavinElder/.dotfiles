@@ -1,23 +1,17 @@
 # Dotfiles
 
-This is a bunch of random dotfiles for moving accross machines.
+This repo is a basic setup for MacOS dev environment.
 
-This is not complete.
+## GNU STOW for creating symlinks for Config files
 
-## install.sh for creating symlinks for Config files
+[GNU STOW](https://www.gnu.org/software/stow/) is a symlink farm manager.
 
-## slate.js
+## Slate
 
-Slate is a window manager found [HERE](https://github.com/jigish/slate)
+[Slate](https://github.com/jigish/slate) is a window manager for MacOS which is highly customisable.
 
-Slate.js is the config used to manage this. Shout out to [NickTikhonov](https://github.com/NickTikhonov) for the inital JS 
+## Setup
 
-## VSCode
+run ./scripts/setup-osx.sh & profit
 
-## install_tools.sh for creating the enviornment 
-The tools this script installs are :
-  * install brew
-  * install zsh
-  * install slate
-  * install prezto
-
+**If you choose to run this please read the script to ensure you know what it does.**
