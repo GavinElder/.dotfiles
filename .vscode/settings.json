@@ -1,2 +1,65 @@
 {
+    "workbench.startupEditor": "newUntitledFile",
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "extensions.ignoreRecommendations": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": 0,
+    "files.insertFinalNewline": true,
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#2979FF",
+        "list.activeSelectionForeground": "#2979FF",
+        "list.inactiveSelectionForeground": "#2979FF",
+        "list.highlightForeground": "#2979FF",
+        "scrollbarSlider.activeBackground": "#2979FF50",
+        "editorSuggestWidget.highlightForeground": "#2979FF",
+        "textLink.foreground": "#2979FF",
+        "progressBar.background": "#2979FF",
+        "pickerGroup.foreground": "#2979FF",
+        "tab.activeBorder": "#2979FF",
+        "notificationLink.foreground": "#2979FF",
+        "editorWidget.resizeBorder": "#2979FF",
+        "editorWidget.border": "#2979FF",
+        "settings.modifiedItemForeground": "#2979FF",
+        "panelTitle.activeBorder": "#2979FF"
+    },
+    "workbench.activityBar.visible": true,
+    "workbench.sideBar.location": "left",
+    "vs-kubernetes": {
+        "vs-kubernetes.helm-path": "/Users/gavin/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vs-kubernetes.draft-path": "/Users/gavin/.vs-kubernetes/tools/draft/darwin-amd64/draft",
+        "vs-kubernetes.minikube-path": "/Users/gavin/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    },
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "go.autocompleteUnimportedPackages": false,
+    "go.lintOnSave": "file",
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": [
+        "--fast"
+    ],
+    "go.formatTool": "goreturns",
+    "go.alternateTools": {
+        " goreturns": "gofumports"
+    },
+    "files.associations": {
+        "*.pp": "puppet",
+        "*.pp ": "puppet"
+    },
+    "formattingToggle.activateFor": [
+        "formatOnPaste",
+        "formatOnSave"
+    ],
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": false,
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.statusBar.visible": true
 }
